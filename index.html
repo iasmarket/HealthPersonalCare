@@ -1,4 +1,128 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .datetime {
+            text-align: center;
+            color: gray;
+        }
+
+        .date, .time {
+            font-size: 48px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 7cm);
+        }
+
+        .product {
+            width: calc(100% / 4);
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+
+        .product .content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+.product img {
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+}
+
+
+        .product .description {
+            margin-top: 10px;
+        }
+
+        .product .more-link {
+            margin-top: 5px;
+            cursor: pointer;
+            color: blue;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: gray;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a:hover {
+            background-color: #575757;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .product {
+                width: calc(100% / 3);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        /* Style pour le bouton flottant */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="datetime">
+        <div class="date" id="comment"></div>
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="container">
+      
+
 
 <div class="product"><a href="https://www.amazon.com/dp/B0D6SRLFCL?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/510ow9gaXaL._SL500_.jpg" alt="Product Image"></a><p>MENO Vitamins for Menopause, 30 Servings (Pack of 3) - Hormone-Free Menopause Supplements for Women with Black Cohosh & Ashwagandha KSM-66 - Helps Alleviate Hot Flashes, Night Sweats, & Mood Swings</p><p>$108.30 ($0.60 / Count)</p><a href="https://www.amazon.com/dp/B0D6SRLFCL?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
@@ -88,4 +212,45 @@
 <div class="product"><a href="https://www.amazon.com/dp/B00NNZRJ2G?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41YWG-0RKpL._SL500_.jpg" alt="Product Image"></a><p>OCuSOFT Lid Scrub Original Eyelid Cleanser - Pre-Moistened Eyelid Wipes for Mild to Moderate Conditions - Eyelid Cleanser to Clean, Comfort & Soothe Irritated Eyelids - 30 Count</p><p>$11.38 ($0.38 / Count)</p><a href="https://www.amazon.com/dp/B00NNZRJ2G?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00DJUK8HS?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51oBE3IVUkL._SL500_.jpg" alt="Product Image"></a><p>PreserVision AREDS 2 Eye Vitamin & Mineral Supplement, Contains Lutein, Vitamin C, Zeaxanthin, Zinc & Vitamin E, 120 Softgels (Packaging May Vary)</p><p>$31.06 ($0.26 / Count)</p><a href="https://www.amazon.com/dp/B00DJUK8HS?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00NMPJR90?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41OYxfKCMGL._SL500_.jpg" alt="Product Image"></a><p>OCuSOFT Lid Scrub PLUS - Pre-Moistened Leave-On Eyelid Wipes for Moderate to Severe Conditions - Moisturizing Eyelid Cleanser for Maximum Relief - 30 Count</p><p>$18.97 ($0.63 / Count)</p><a href="https://www.amazon.com/dp/B00NMPJR90?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B01N303YPU?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31m2Qy1Iw+L._SL500_.jpg" alt="Product Image"></a><p>Bruder Moist Heat Eye Compress | Microwave Activated | Fast Acting and Effective Relief for Dry Eye and Other Eye Irritation</p><p>$20.95</p><a href="https://www.amazon.com/dp/B01N303YPU?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00008BRR8?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41RscSZokiL._SL500_.jpg" alt="Product Image"></a><p>Refresh Tears, Lubricant Eye Drops, 2 Bottles .5 fl oz (15 ml)</p><p>$13.79</p><a href="https://www.amazon.com/dp/B00008BRR8?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0036B8QL0?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51JKJ6aZUsL._SL500_.jpg" alt="Product Image"></a><p>Systane Ultra Lubricant Eye Drops, Artificial Tears for Dry Eye, Twin Pack, 10-mL Each</p><p>$18.22 ($55.21 / Fl Oz)</p><a href="https://www.amazon.com/dp/B0036B8QL0?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07BVYZL88?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41Nyltw77SL._SL500_.jpg" alt="Product Image"></a><p>LUMIFY Redness Reliever Eye Drops 0.25 Ounce (7.5mL)</p><p>$21.48 ($84.90 / Fl Oz)</p><a href="https://www.amazon.com/dp/B07BVYZL88?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00DJUK8IM?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51LPoH2nRnL._SL500_.jpg" alt="Product Image"></a><p>Ocuvite Eye Vitamin & Mineral Supplement, Contains Zinc, Vitamins C, E, Omega 3, Lutein, & Zeaxanthin, 90 Softgels (Packaging May Vary)</p><p>$23.47 ($0.26 / Count)</p><a href="https://www.amazon.com/dp/B00DJUK8IM?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
 <div class="product"><a href="https://www.amazon.com/dp/B07JMHNP9F?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/616tKX8dAxL._SL500_.jpg" alt="Product Image"></a><p>Prebiotics for Advanced Gut Health - Immune System Support & Dietary Fiber - Fuels Good Bacteria Growth to Promote Digestive Health - Gas & Digestion Support - Probiotics for Men & Women - 60 Capsules</p><p>$19.97 ($0.33 / Count)</p><a href="https://www.amazon.com/dp/B07JMHNP9F?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0BRTJ7BJ1?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51JFiTJs6ZL._SL500_.jpg" alt="Product Image"></a><p>Physician's CHOICE Prebiotic-Probiotic - Multi-Strain Probiotics & Synergistic Prebiotics -Designed for Digestive Health, Supporting Gut Microbiome - Powerful PrePro for Gut Health - for Women & Men</p><p>$18.97 ($0.63 / Count)</p><a href="https://www.amazon.com/dp/B0BRTJ7BJ1?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07VYMQF6M?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51Y0hMBp3NL._SL500_.jpg" alt="Product Image"></a><p>Prebiotics and Probiotic with Whole Food Enzymes for Adults Women & Men - Probiotics Lactobacillus Acidophilus - Digestive Health Capsules Shelf Stable Supplement - Non-GMO Gluten & Dairy Free -30ct</p><p>$19.97 ($0.67 / Count)</p><a href="https://www.amazon.com/dp/B07VYMQF6M?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B01FICESXE?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41wI-mGIidL._SL500_.jpg" alt="Product Image"></a><p>Dr. Tobias Prebiotics, Supports Digestion & Gut Health, Feed Good Probiotic Bacteria, Boost Gut Immune Function, Vegan & Non-GMO Gut Health Supplements for Men and Women, 30 Capsules, 30 Servings</p><p>$25.99 ($0.87 / Count)</p><a href="https://www.amazon.com/dp/B01FICESXE?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07GPFB6FJ?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41IkSyAmJOL._SL500_.jpg" alt="Product Image"></a><p>Amazon Basics Prebiotic & Probiotic Gummies, 2 Billion CFU, Blue Raspberry, 50 Count (2 per Serving) (Previously Solimo)</p><p>$9.21 ($0.18 / Count)</p><a href="https://www.amazon.com/dp/B07GPFB6FJ?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CRFWM2Z6?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41wGfw561uL._SL500_.jpg" alt="Product Image"></a><p>NOW Supplements, Prebiotic Inulin Fiber, Intestinal Support*, Nourishes Friendly Bacteria*, Made with Organic Inulin, 180 Veg Capsules</p><p>$19.26 ($0.11 / Count)</p><a href="https://www.amazon.com/dp/B0CRFWM2Z6?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CPN9NK38?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41hL4HSQxwL._SL500_.jpg" alt="Product Image"></a><p>OLLY Probiotic + Prebiotic Gummy, Digestive Support and Gut Health, 500 Million CFUs, Fiber, Adult Chewable Supplement for Men and Women, Peach, 30 Day Supply - 60 Count</p><p>$21.35 ($0.36 / Count)</p><a href="https://www.amazon.com/dp/B0CPN9NK38?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B06XKLJ9C5?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41qULNw-LNL._SL500_.jpg" alt="Product Image"></a><p>Hyperbiotics Organic Prebiotic Fiber Powder | Vegan Unflavored Soluble Fiber Supplement Powder | Supports Healthy Digestion & Growth of Beneficial Gut Bacteria | Gluten Free | 54 Servings</p><p>$31.99</p><a href="https://www.amazon.com/dp/B06XKLJ9C5?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B079H53D2B?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51Y4b2nfCYL._SL500_.jpg" alt="Product Image"></a><p>Physician's Choice Probiotics 60 Billion CFU - 10 Strains + Organic Prebiotics - Immune, Digestive & Gut Health - Supports Occasional Constipation, Diarrhea, Gas & Bloating - for Women & Men - 30ct</p><p>$23.97 ($0.80 / Count)</p><a href="https://www.amazon.com/dp/B079H53D2B?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
-2
+    </div>
+
+    <!-- Bouton flottant -->
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">HOME</button>
+<div class="pagination">
+        <a href=" ">0</a>
+        <!-- Ajoutez plus de liens si nécessaire -->
+    </div>
+    <script>
+        function updateTime() {
+            const optionsDate = {
+                timeZone: 'America/Los_Angeles',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const optionsTime = {
+                timeZone: 'America/Los_Angeles',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+
+            const now = new Date();
+            const formatterDate = new Intl.DateTimeFormat('en-US', optionsDate);
+            const formatterTime = new Intl.DateTimeFormat('en-US', optionsTime);
+
+            const formattedDate = formatterDate.format(now);
+            const formattedTime = formatterTime.format(now);
+
+            document.getElementById('comment').textContent = "As an AMAZON Associate, I earn from qualifying purchases.";
+            document.getElementById('date').textContent = formattedDate;
+            document.getElementById('time').textContent = formattedTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
